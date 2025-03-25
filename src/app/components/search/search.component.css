@@ -1,0 +1,30 @@
+.search-container {
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .card {
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.125);
+  }
+  
+  .input-group {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .form-control-lg {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
+  }
+  
+  .btn-lg {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .bi-search {
+    font-size: 1.2rem;
+    vertical-align: middle;
+  }

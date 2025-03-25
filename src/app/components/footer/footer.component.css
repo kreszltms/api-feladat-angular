@@ -1,0 +1,35 @@
+.footer {
+  margin-top: auto;
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  border-top: 1px solid #dee2e6;
+}
+  
+  .footer p {
+    margin-bottom: 0;
+    color: #6c757d;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #0d6efd !important;
+  }
+  
+  .bi {
+    font-size: 1.5rem;
+    vertical-align: middle;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      text-align: center;
+    }
+    
+    .col-md-6 {
+      margin-bottom: 1rem;
+    }
+  }

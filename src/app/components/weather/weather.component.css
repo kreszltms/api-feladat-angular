@@ -1,0 +1,59 @@
+.weather-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 15px;
+  }
+  
+  .search-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-group {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .weather-card {
+    margin-top: 2rem;
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .weather-icon {
+    font-size: 4rem;
+    color: #4a90e2;
+    margin: 1rem 0;
+  }
+  
+  .card-header {
+    border-radius: 15px 15px 0 0 !important;
+    padding: 1.5rem;
+  }
+  
+  .display-4 {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  
+  @keyframes fadeIn {
+    from { 
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .btn-lg {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .form-control-lg {
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+  }

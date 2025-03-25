@@ -1,0 +1,22 @@
+<div class="search-container">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            [(ngModel)]="searchTerm"
+            (keyup.enter)="onSearch()"
+            placeholder="Keresés..."
+          >
+          <button
+            class="btn btn-primary btn-lg"
+            type="button"
+            (click)="onSearch()"
+          >
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,51 @@
+<div class="weather-container">
+    <div class="search-box text-center">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          [(ngModel)]="city"
+          placeholder="Írj be egy várost"
+          (keyup.enter)="getWeather()"
+        >
+        <button
+          class="btn btn-primary btn-lg"
+          type="button"
+          (click)="getWeather()"
+        >
+          <i class="bi bi-search"></i> Keresés
+        </button>
+      </div>
+    </div>
+  
+    <div *ngIf="loading" class="text-center mt-4">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Betöltés...</span>
+      </div>
+    </div>
+  
+    <div *ngIf="weatherData" class="weather-card">
+      <div class="card text-center shadow">
+        <div class="card-header bg-primary text-white">
+          <h2>{{ weatherData.name }}</h2>
+          <p class="mb-0">Jelenleg</p>
+        </div>
+        <div class="card-body">
+          <div class="weather-icon">
+            <i class="bi bi-cloud-sun fs-1"></i>
+          </div>
+          <div class="weather-info">
+            <p class="display-4 mb-0">{{ weatherData.main?.temp }}°C</p>
+            <div class="row mt-4">
+              <div class="col-md-6">
+                <p><i class="bi bi-droplet"></i> Páratartalom: {{ weatherData.main?.humidity }}%</p>
+              </div>
+              <div class="col-md-6">
+                <p><i class="bi bi-wind"></i> Szél: {{ weatherData.wind?.speed }} m/s</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
